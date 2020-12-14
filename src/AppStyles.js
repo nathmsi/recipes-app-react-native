@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
 // screen sizing
-const { width, height } = Dimensions.get('window');
+export const { width, height } = Dimensions.get('window');
 // orientation must fixed
 const SCREEN_WIDTH = width < height ? width : height;
 

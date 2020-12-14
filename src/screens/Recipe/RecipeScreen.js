@@ -14,6 +14,7 @@ import Carousel, { Pagination } from 'react-native-snap-carousel';
 import { getIngredientName, getCategoryName, getCategoryById } from '../../data/MockDataAPI';
 import BackButton from '../../components/BackButton/BackButton';
 import ViewIngredientsButton from '../../components/ViewIngredientsButton/ViewIngredientsButton';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const { width: viewportWidth } = Dimensions.get('window');
 
@@ -21,7 +22,7 @@ export default class RecipeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return {
       headerTransparent: 'true',
-      headerLeft: (
+      headerLeft: () => (
         <BackButton
           onPress={() => {
             navigation.goBack();
@@ -71,12 +72,9 @@ export default class RecipeScreen extends React.Component {
               renderItem={this.renderImage}
               sliderWidth={viewportWidth}
               itemWidth={viewportWidth}
-              inactiveSlideScale={1}
-              inactiveSlideOpacity={1}
               firstItem={0}
-              loop={false}
-              autoplay={false}
-              autoplayDelay={500}
+              autoplay={true}
+              autoplayDelay={200}
               autoplayInterval={3000}
               onSnapToItem={index => this.setState({ activeSlide: index })}
             />

@@ -25,7 +25,7 @@ export const categories = [
   {
     id: 0,
     name: 'Pizza',
-    photo_url: 'https://amp.businessinsider.com/images/5c084bf7bde70f4ea53f0436-750-563.jpg'
+    photo_url: 'https://thumbs.dreamstime.com/z/ensemble-de-diff%C3%A9rentes-tranches-pizza-d-isolement-sur-le-blanc-franc-d%C3%A9licieux-121052214.jpg'
   },
 ];
 
@@ -37,7 +37,6 @@ export const recipes = [
     photo_url: 'https://www.texanerin.com/content/uploads/2019/06/nobake-chocolate-cookies-1-650x975.jpg',
     photosArray: [
       'https://www.texanerin.com/content/uploads/2019/06/nobake-chocolate-cookies-1-650x975.jpg',
-      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
       'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
       'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
       'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
@@ -251,9 +250,9 @@ export const recipes = [
     recipeId: 0,
     categoryId: 0,
     title: 'Classic Lasagna',
-    photo_url: 'https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg',
+    photo_url: 'https://namelymarly.com/wp-content/uploads/2020/11/Vegan_Oreo_Cheesecake_02-edit-web-800x1200.jpg',
     photosArray: [
-      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      "https://namelymarly.com/wp-content/uploads/2020/11/Vegan_Oreo_Cheesecake_02-edit-web-800x1200.jpg",
       'https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg',
       'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
       'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
@@ -564,7 +563,7 @@ export const ingredients = [
   {
     ingredientId: 42,
     name: 'Butter',
-    photo_url: 'https://redrockstoffee.com/media/2016/11/AdobeStock_76417550.jpeg'
+    photo_url: 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/04/24/FN_stock-image-getty-butter-stick_s6x4.jpg.rend.hgtvcom.1280.853.suffix/1587736088845.jpeg'
   },
   {
     ingredientId: 43,

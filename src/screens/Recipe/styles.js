@@ -8,10 +8,11 @@ const styles = StyleSheet.create({
     flex: 1
   },
   carouselContainer: {
-    minHeight: 250
+    minHeight: 250,
   },
-  carousel: {},
-
+  carousel: {
+    flex: 1
+  },
   image: {
     ...StyleSheet.absoluteFillObject,
     width: '100%',
@@ -45,9 +46,6 @@ const styles = StyleSheet.create({
   },
   infoContainer: {
     flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
   },
   buttonContainer: {
     flex: 1,
@@ -58,7 +56,8 @@ const styles = StyleSheet.create({
   infoPhoto: {
     height: 20,
     width: 20,
-    marginRight: 0
+    marginRight: 0,
+    alignSelf: 'center'
   },
   infoRecipe: {
     fontSize: 14,
@@ -74,7 +73,7 @@ const styles = StyleSheet.create({
   infoDescriptionRecipe: {
     textAlign: 'left',
     fontSize: 16,
-    marginTop: 30,
+    marginTop: 5,
     margin: 15
   },
   infoRecipeName: {

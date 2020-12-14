@@ -13,6 +13,7 @@ import {
   getRecipesByIngredient,
   getCategoryName
 } from '../../data/MockDataAPI';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default class IngredientScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
@@ -30,8 +31,8 @@ export default class IngredientScreen extends React.Component {
   };
 
   renderRecipes = ({ item }) => (
-    <TouchableHighlight underlayColor='rgba(73,182,77,1,0.9)' onPress={() => this.onPressRecipe(item)}>
-      <TouchableHighlight underlayColor='rgba(73,182,77,1,0.9)' onPress={() => this.onPressRecipe(item)}>
+    <TouchableHighlight underlayColor='rgba(192,192,192,0.3)' onPress={() => this.onPressRecipe(item)}>
+      <TouchableHighlight underlayColor='rgba(192,192,192,0.3)' onPress={() => this.onPressRecipe(item)}>
         <View style={styles.container}>
           <Image style={styles.photo} source={{ uri: item.photo_url }} />
           <Text style={styles.title}>{item.title}</Text>
@@ -47,12 +48,12 @@ export default class IngredientScreen extends React.Component {
     const ingredientUrl = getIngredientUrl(ingredientId);
     const ingredientName = navigation.getParam('name');
     return (
-      <ScrollView style={styles.mainContainer}>
-        <View style={{ borderBottomWidth: 0.4, marginBottom: 10, borderBottomColor: 'grey' }}>
+      <View style={styles.mainContainer}>
+        <View style={{ borderBottomWidth: 0.4, marginBottom: 10, borderBottomColor: 'grey'}}>
           <Image style={styles.photoIngredient} source={{ uri: '' + ingredientUrl }} />
         </View>
         <Text style={styles.ingredientInfo}>Recipes with {ingredientName}:</Text>
-        <View>
+        <ScrollView style={{ }}> 
           <FlatList
             vertical
             showsVerticalScrollIndicator={false}
@@ -61,8 +62,8 @@ export default class IngredientScreen extends React.Component {
             renderItem={this.renderRecipes}
             keyExtractor={item => `${item.recipeId}`}
           />
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </View>
     );
   }
 }

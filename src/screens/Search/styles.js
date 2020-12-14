@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
-import { RecipeCard } from '../../AppStyles';
+import { RecipeCard, width } from '../../AppStyles';
+
 
 const styles = StyleSheet.create({
   container: RecipeCard.container,
@@ -9,6 +10,13 @@ const styles = StyleSheet.create({
   btnIcon: {
     height: 14,
     width: 14
+  },
+  searchView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignSelf: 'center',
+    width: width * ( 3 / 5 )
   }
 });
 

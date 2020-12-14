@@ -8,7 +8,7 @@
     "platforms": [
       "ios",
       "android",
-      "web"
+      "web"    
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -25,7 +25,13 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.msika.Instafood",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.msika.Instafood",
+      "versionCode": 1
     }
   }
 }
